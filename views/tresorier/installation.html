@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Installation & Prérequis – AJVDNK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-white to-yellow-50 min-h-screen flex flex-col items-center py-12">
+    <div class="w-full max-w-2xl bg-white rounded-2xl shadow-2xl p-10 mt-10 mb-10 border border-blue-200">
+        <h1 class="text-3xl font-extrabold text-blue-700 mb-6 text-center">Installation & Prérequis – AJVDNK</h1>
+        <div class="text-gray-700 space-y-4 text-base leading-relaxed">
+            <ol class="list-decimal pl-6 space-y-2">
+                <li>
+                    <strong>Environnement requis</strong><br>
+                    • Un ordinateur sous Windows, Mac ou Linux<br>
+                    • Un serveur local (WAMP, XAMPP, MAMP ou LAMP) avec PHP 7.4+ et MySQL/MariaDB<br>
+                    • Un navigateur web moderne (Chrome, Firefox, Edge, ...)
+                </li>
+                <li>
+                    <strong>Installation du serveur local</strong><br>
+                    Téléchargez et installez WAMP (Windows), XAMPP (Windows/Mac/Linux) ou MAMP (Mac).<br>
+                    Lancez le serveur (Apache + MySQL).
+                </li>
+                <li>
+                    <strong>Déploiement de l’application</strong><br>
+                    • Placez le dossier <b>Projet AJVDNK</b> dans le dossier <b>www</b> (WAMP) ou <b>htdocs</b> (XAMPP/MAMP).<br>
+                    • Vérifiez que l’arborescence du projet est respectée.
+                </li>
+                <li>
+                    <strong>Création de la base de données</strong><br>
+                    • Ouvrez phpMyAdmin ou un terminal MySQL.<br>
+                    • Importez le fichier <b>db.sql</b> fourni avec le projet.<br>
+                    • Cela créera la base <b>ajvdk_finance</b> et toutes les tables nécessaires.
+                </li>
+                <li>
+                    <strong>Configuration de la connexion à la base</strong><br>
+                    • Ouvrez le fichier <b>config/config.php</b>.<br>
+                    • Vérifiez/ajustez les identifiants MySQL (hôte, utilisateur, mot de passe, nom de la base) selon votre installation locale.
+                </li>
+                <li>
+                    <strong>Premier accès</strong><br>
+                    • Ouvrez votre navigateur et allez à l’adresse <b>http://localhost/Projet%20AJVDNK/</b><br>
+                    • Connectez-vous avec le compte trésorier créé dans la base (voir table <b>users</b> ou demandez à l’administrateur).
+                </li>
+                <li>
+                    <strong>Fonctionnalités principales</strong><br>
+                    • Gestion des membres, cotisations, dons, rapports, statistiques, profil trésorier.<br>
+                    • Sécurité : authentification, gestion de session, modification du mot de passe.
+                </li>
+                <li>
+                    <strong>Problèmes fréquents</strong><br>
+                    • Erreur de connexion à la base : vérifier <b>config.php</b> et que MySQL est démarré.<br>
+                    • Problème d’accès : vérifier les droits sur les dossiers/fichiers.<br>
+                    • Mot de passe oublié : demander à l’administrateur de réinitialiser via la base.
+                </li>
+            </ol>
+            <p class="mt-4 text-sm text-gray-500">Pour toute question, consultez l’aide utilisateur ou contactez le support.</p>
+        </div>
+        <div class="mt-8 text-center">
+            <a href="aide_utilisation.html" class="inline-block bg-yellow-100 hover:bg-yellow-200 text-yellow-800 font-bold px-6 py-2 rounded shadow transition">&larr; Retour à l’aide utilisateur</a>
+        </div>
+    </div>
+</body>
+</html>
